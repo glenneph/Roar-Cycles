@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown Menu</title>
+    <style>
+        .navbutton {
+            background-color:aqua ;
+            text-align: center;
+            padding: 10px 20px;
+            width: 100px;
+            display: inline-block;
+            position: relative;
+        }
+
+        .dropdown {
+            display: none;
+            position: absolute;
+        }
+
+        .navbutton:hover .dropdown {
+            display: block;
+        }
+        
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="navbutton">
+        <a href="#">Home</a>
+    </div>
+    <div class="navbutton">
+        <a href="#">Products</a>
+            <div class="dropdown">
+                <div class="navbutton">
+                    <a href="#">Category 1</a>
+                </div>
+                <div class="navbutton">
+                    <a href="#">Category 2</a>
+                </div>
+                <div class="navbutton">
+                    <a href="#">Category 3</a>
+                </div>
+            </div>
+    </div>
+    <div class="navbutton">
+        <a href="#">Contact Us</a>
+    </div>
+</nav>
+</body>
+</html>
